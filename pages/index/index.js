@@ -6,11 +6,12 @@ Page({
   data: {
     //  imgUrl: app.data.imgUrl,
     start: false,
-    images: ["https://picsum.photos/360/460?random=1", 
-             "https://picsum.photos/360/460?random=2",
-             "https://picsum.photos/360/460?random=3", 
-             "https://picsum.photos/360/460?random=4", 
-             "https://picsum.photos/360/460?random=5"],
+    images: ["https://picsum.photos/360/460?random=1",
+      "https://picsum.photos/360/460?random=2",
+      "https://picsum.photos/360/460?random=3",
+      "https://picsum.photos/360/460?random=4",
+      "https://picsum.photos/360/460?random=5"
+    ],
     qiu: true,
     imagess: null
   },
