@@ -1,6 +1,8 @@
-<view class="egg">
-  <image class="egg_ji" src="https://picsum.photos/360/460?random=1" mode="widthFix"></image>
-  <image class="play {{start?'go':''}}" bindtap="eggPlay" src="https://picsum.photos/360/460?random=2" mode="widthFix"></image>
-  <image wx:for="{{images}}" wx:for-index="index" wx:for-item="item" wx:key="index" class="ball ball_{{index+1}} {{start?'weiyi_'+(index+1):''}}" src="{{item}}" ></image>
+<view class="egg" >
+  <!-- <image class="egg_ji" src="https://picsum.photos/360/460?random=1" mode="widthFix"></image> -->
+  <view class="region" style="width: 618rpx; height: 385rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></view>
+  <!-- <image class="play {{start?'go':''}}" bindtap="eggPlay" src="https://picsum.photos/360/460?random=2" mode="widthFix"></image> -->
+  <view bindtap="eggPlay" class="start">开始</view>
+  <image wx:for="{{images}}" wx:for-index="index" wx:for-item="item" wx:key="index" class="ball ball_{{index+1}} {{start?'weiyi_'+(index+1):''}}" src="{{item}}"  lazy-load="{{ true }}" mode="widthFix" show-menu-by-longpress="{{ true }}"   webp="{{ true }}"></image>
   <image hidden="{{qiu}}" animation="{{ani}}" class="ball ball_end" src="{{imagess}}"  ></image>
  </view>

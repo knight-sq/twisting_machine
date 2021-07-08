@@ -1,4 +1,15 @@
 /* 扭蛋机 */
+.region{
+  width: 500rpx;
+  height: 370rpx;
+  margin: auto;
+  border: 1px solid red;
+}
+.start{
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
 .egg{
   width: 100%;
   position: absolute;
